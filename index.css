@@ -17,6 +17,9 @@ body {
     display: block;
     font-size: 20px;
     font-weight: bold;
+    outline-color: orangeRed;
+    outline-style: solid;
+    outline-width: 5px;
 }
 
 .footer {
@@ -24,6 +27,7 @@ body {
     bottom: 0px;
     width: 100%;
     background-color: orangeRed;
+    display: block;
 }
 
 .footer .simpleButton{
