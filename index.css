@@ -7,8 +7,15 @@ body {
     background-color: grey;
 }
 
+.bodyDiv {
+	border-color: darkseagreen;
+	border-style: solid;
+	border-width: 5px;
+	padding: 3px;
+}
+
 .simpleButton {
-    background-color: orangeRed;
+    background-color: green;
     border: none;
     color: lightGrey;
     padding: 0px 10px;
@@ -17,23 +24,36 @@ body {
     display: block;
     font-size: 20px;
     font-weight: bold;
-    outline-color: orangeRed;
+    outline-color: green;
     outline-style: solid;
     outline-width: 5px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background-color: orangeRed;
-    display: block;
+	width: 100%;
+	background: green;
+	outline-color: green;
+	outline-width: 10px;
+	outline-style: none;
 }
 
 .footer .simpleButton{
     border-width: 2px;
     border-style: solid;
     border-color: black;
+    outline-style: none;
+}
+
+div {
+	float: none;
+	display: block;
+}
+
+div.navMenu{
+	margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: lightGrey;
 }
 
 ul.navMenu {
@@ -46,11 +66,13 @@ ul.navMenu {
 
 li.navMenu {
     float: left;
+    border-width: 3px;
+    border-style: groove;
 }
 
 li.navMenu a {
     display: block;
-    color: orangeRed;
+    color: green;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,4 +81,23 @@ li.navMenu a {
 }
 li.navMenu a:hover {
     background-color: darkgrey;
+}
+
+.container {
+    border: solid 1px black;
+    zoom: 1; /* IE6&7 */
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+img {
+	display: block;
 }
